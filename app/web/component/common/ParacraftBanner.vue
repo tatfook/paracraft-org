@@ -54,6 +54,7 @@ export default {
     font-size: 32px;
     &-normal {
       line-height: 42px;
+      font-weight: bold;
     }
     &-small {
       margin-top: 20px;

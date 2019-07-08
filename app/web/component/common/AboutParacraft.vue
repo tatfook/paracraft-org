@@ -64,6 +64,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
     &-icon {
       margin: 0 20px;
     }
@@ -84,6 +85,7 @@ export default {
     }
     &-right {
       flex: 1;
+      padding-top: 32px;
       &-video {
         max-width: 590px;
         background: rgb(241, 241, 241);
