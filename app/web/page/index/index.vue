@@ -1,9 +1,10 @@
 <template>
   <div class="paracraft">
-    paracraft home page
+    <common-header></common-header>
     <div class="paracraft-main">
       <router-view id="paracraft-page" />
     </div>
+    <common-footer></common-footer>
   </div>
 </template>
 
@@ -13,11 +14,18 @@ import Vuex from 'vuex'
 import router from './index.router'
 import ElementUI, { Progress } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import CommonHeader from '@/component/common/CommonHeader'
+import CommonFooter from '@/component/common/CommonFooter'
+
 Vue.use(Vuex)
 Vue.use(ElementUI)
 
 export default {
   name: 'App',
+  components: {
+    CommonHeader,
+    CommonFooter
+  },
   router
 }
 </script>
