@@ -1,9 +1,6 @@
 <template>
   <div class="paracraft">
-<<<<<<< HEAD
-=======
     <common-header></common-header>
->>>>>>> 94190432e70bb963900d1e3ba6cc1786e0aa7995
     <div class="paracraft-main">
       <router-view id="paracraft-page" />
     </div>
