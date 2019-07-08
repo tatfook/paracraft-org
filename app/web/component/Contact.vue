@@ -52,6 +52,7 @@ export default {
     text-align: center;
     margin-top: 72px;
     margin-bottom: 40px;
+    font-family: 'OpenSans-Semibold';
     .title-text {
       margin: 0 15px;
     }
