@@ -34,7 +34,7 @@ export default {
     ParacraftBanner
   },
   mounted() {
-    window.document.title = 'Contact'
+    window.document.title = 'Contact | Paracraft'
   },
   destroyed() {
     window.document.title = ''
