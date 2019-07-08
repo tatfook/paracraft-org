@@ -1,6 +1,6 @@
 <template>
   <div class="letter-page">
-    <img src="@/asset/images/bba.svg" alt="">
+    <!-- <img src="@/asset/images/bba.svg" alt=""> -->
   </div>
 </template>
 <script>
