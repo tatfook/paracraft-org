@@ -6,7 +6,7 @@
     </div>
     <div class="common-header-menus">
       <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
-      <a href="#" target="_blank">Download</a>
+      <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
       <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
     </div>
   </div>
