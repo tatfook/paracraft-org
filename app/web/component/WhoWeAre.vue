@@ -46,6 +46,7 @@ export default {
     margin-bottom: 40px;
     .title-text {
       margin: 0 15px;
+      font-family: 'OpenSans-Semibold';
     }
     .title-box {
       display: inline-block;

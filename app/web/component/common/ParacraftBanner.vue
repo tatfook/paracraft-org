@@ -46,6 +46,7 @@ export default {
   }
   .banner-slogan {
     position: absolute;
+    font-family: 'OpenSans';
     top: 145px;
     left: 250px;
     display: block;
@@ -60,6 +61,7 @@ export default {
       margin-top: 20px;
       font-size: 20px;
       color: rgba(255, 255, 255, 0.6);
+      font-family: 'OpenSans-Semibold'
     }
   }
 }

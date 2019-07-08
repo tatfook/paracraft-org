@@ -30,3 +30,25 @@ export default {
 }
 </script>
 
+<style lang="scss">
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../asset/fonts/opensans-semibold-webfont.eot'),
+    url('../../asset/fonts/opensans-semibold-webfont.woff') format('woff'),
+    url('../../asset/fonts/opensans-semibold-webfont.ttf') format('truetype'),
+    url('../../asset/fonts/opensans-semibold-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../../asset/fonts/opensans-regular-webfont.eot'),
+    url('../../asset/fonts/opensans-regular-webfont.woff') format('woff'),
+    url('../../asset/fonts/opensans-regular-webfont.ttf') format('truetype'),
+    url('../../asset/fonts/opensans-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+</style>
+
