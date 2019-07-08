@@ -1,19 +1,24 @@
 <template>
   <div class="common-header">
-    <div class="common-header-logo">
+    <div class="common-header-logo" @click="onToHome">
       <img src="@/asset/images/logo.png" alt="" />
       Paracraft
     </div>
     <div class="common-header-menus">
-      <a href="#">About</a>
-      <a href="#" target="_blank">Download</a>
-      <a href="#">Contact</a>
+      <router-link to="/">About</router-link>
+      <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
+      <router-link to="contact">Contact</router-link>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'CommonHeader'
+  name: 'CommonHeader',
+  methods: {
+    onToHome() {
+      this.$router.push('/')
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -28,6 +33,8 @@ export default {
     flex: 1;
     font-size: 24px;
     font-weight: bold;
+    display: block;
+    cursor: pointer;
   }
   &-menus {
     a {
