@@ -3,5 +3,8 @@
 module.exports = {
   plugins: {
     imagemini: false
-  }
+  },
+  alias: {
+    '@': 'app/web'
+  },
 };
