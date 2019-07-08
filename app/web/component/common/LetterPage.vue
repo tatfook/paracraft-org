@@ -3,6 +3,7 @@
     <div class="letter-page-box">
       <div class="letter-page-bg-center"></div>
       <div class="letter-page-bg-border"></div>
+      <img class="letter-page-seal" src="@/asset/images/seal.png" alt="">
       <parent-letter class="letter-page-content" v-if="letterType === 'parent'"></parent-letter>
       <founder-letter class="letter-page-content" v-if="letterType === 'founder'"></founder-letter>
       <educator-letter class="letter-page-content" v-if="letterType === 'educator'"></educator-letter>
@@ -56,7 +57,7 @@ export default {
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url(/public/img/letter-center.png);
+    background-image: url(../../asset/images/letter-center.png);
   }
   &-bg-border {
     position: absolute;
@@ -64,9 +65,13 @@ export default {
     right: 20px;
     top: 20px;
     bottom: 20px;
-    border: 40px solid red;
-    border-image: url(http://127.0.1:7001/public/img/letter-border.png) 10% 30%
-      round;
+    border: 40px solid transparent;
+    border-image: url(../../asset/images/letter-border.png) 60 repeat;
+  }
+  &-seal {
+    position: absolute;
+    right: 56px;
+    bottom: 56px;
   }
 }
 </style>

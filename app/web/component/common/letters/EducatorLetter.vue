@@ -1,6 +1,10 @@
 <template>
   <div class="educator-letter">
-    <div class="educator-letter-title">To Educators</div>
+    <div class="educator-letter-title">
+      <img class="educator-letter-box-left" src="@/asset/images/box2.png" alt="">
+      To Educators
+      <img class="educator-letter-box-right" src="@/asset/images/box2.png" alt="">
+    </div>
     <div class="educator-letter-content">
       <p>Learning starts with interests. If the student starts on some subject, it is better if the student has already some experiences of the related content in his/her real life. For example, if the student comes from an engineer or scientist family, s/he is already familiar with numbers and related concepts, his/her family often watching discovery channel together, parents often talking about engineering or scientific concepts and thinking methodologies, the student is already immersed in an engineering or scientific environment. It will be easy for this student to relate to the content of subjects like mathematics, physics, chemistry, and other STEM subjects. While students not coming from such a family background feel baffled with the STEM content that they have to learn. Similarly students coming from families that parents are involved with arts works find it easy to relate to arts related subjects since they are already immersed in such concepts like story telling, designing, etc.</p>
       <p>In paracraft, we aim to create a parallel world where everyone can create their own games or creative 3D works. We call such a world with the coined name “ParaWorld”. Paracraft is a very expressive and powerful tool that people can use to create all kinds of complex 3D works. Our users’ works have demonstrated this very clearly.</p>
@@ -23,6 +27,16 @@ export default {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
+  }
+  &-box {
+    &-left {
+      vertical-align: unset;
+      margin-right: 16px;
+    }
+    &-right {
+      vertical-align: unset;
+      margin-left: 16px;
+    }
   }
 }
 </style>

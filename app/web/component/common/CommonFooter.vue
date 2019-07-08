@@ -4,10 +4,10 @@
       <div class="common-footer-item">
         <div class="common-footer-title">Education Philosophy</div>
         <ul>
-          <li><a href="#">Founder Letter</a></li>
-          <li><a href="#">To Parents</a></li>
-          <li><a href="#">To Educators</a></li>
-          <li><a href="#">Self-Directed Learning</a></li>
+          <li><a href="/letter?type=founder">Founder Letter</a></li>
+          <li><a href="/letter?type=parent">To Parents</a></li>
+          <li><a href="/letter?type=educator">To Educators</a></li>
+          <li><a href="https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers" target="_blank">Self-Directed Learning</a></li>
         </ul>
       </div>
       <div class="common-footer-item">
@@ -31,13 +31,12 @@
           <li><a href="#">To Developers</a></li>
           <li><a href="https://github.com/LiXizhi/NPLRuntime/wiki" target="_blank">NPL</a></li>
           <li><a href="https://github.com/LiXizhi/ParaCraft" target="_blank">Paracraft</a></li>
-          <li><a href="#">Who We Are</a></li>
         </ul>
       </div>
       <div class="common-footer-item">
         <div class="common-footer-title">About</div>
         <ul>
-          <li><a href="#">Who We Are</a></li>
+          <li><a href="/whoWeAre">Who We Are</a></li>
           <li>
             <a class="common-footer-icon-link" href="#" target="_blank">
               <img class="icon" src="@/asset/images/fb.png" alt="" />
@@ -112,7 +111,7 @@ export default {
   }
   &-icon-link {
     margin-right: 20px;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }

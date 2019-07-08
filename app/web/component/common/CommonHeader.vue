@@ -5,15 +5,20 @@
       Paracraft
     </div>
     <div class="common-header-menus">
-      <a href="#">About</a>
+      <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
       <a href="#" target="_blank">Download</a>
-      <a href="#">Contact</a>
+      <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'CommonHeader'
+  name: 'CommonHeader',
+  computed: {
+    routerName() {
+      return this.$route.name
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -36,6 +41,9 @@ export default {
       display: inline-block;
       margin-right: 44px;
       text-decoration: none;
+      &.active {
+        color: #198ee9;
+      }
       &:hover {
         color: #198ee9;
       }

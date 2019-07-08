@@ -1,6 +1,9 @@
 <template>
   <div class="parent-letter">
-    <div class="parent-letter-title">To Parents</div>
+    <div class="parent-letter-title">
+      <img class="parent-letter-box-left" src="@/asset/images/box2.png" alt="">
+      To Parents
+      <img class="parent-letter-box-right" src="@/asset/images/box2.png" alt=""></div>
     <div class="parent-letter-content">
       <p>First we wish you have read Scratch founder Mitchel Resnick’s wonderful essays on programming and learning. Particularly, we recommend you read this and this.</p>
       <p>Here at Paracraft, we agree 100% with the ideas and believes outlined in the above two essays. Actually Paracraft itself is a strong testimony to those ideas and believes.</p>
@@ -39,6 +42,16 @@ export default {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
+  }
+  &-box {
+    &-left {
+      vertical-align: unset;
+      margin-right: 16px;
+    }
+    &-right {
+      vertical-align: unset;
+      margin-left: 16px;
+    }
   }
 }
 </style>
