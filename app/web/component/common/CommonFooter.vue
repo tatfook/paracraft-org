@@ -31,13 +31,14 @@
           <li><a href="#">To Developers</a></li>
           <li><a href="https://github.com/LiXizhi/NPLRuntime/wiki" target="_blank">NPL</a></li>
           <li><a href="https://github.com/LiXizhi/ParaCraft" target="_blank">Paracraft</a></li>
-          <li><a href="#">Who We Are</a></li>
         </ul>
       </div>
       <div class="common-footer-item">
         <div class="common-footer-title">About</div>
         <ul>
-          <li><a href="#">Who We Are</a></li>
+          <li>
+            <router-link to="whoWeAre">Who We Are</router-link>
+          </li>
           <li>
             <a class="common-footer-icon-link" href="#" target="_blank">
               <img class="icon" src="@/asset/images/fb.png" alt="" />
