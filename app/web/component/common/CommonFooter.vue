@@ -4,10 +4,10 @@
       <div class="common-footer-item">
         <div class="common-footer-title">Education Philosophy</div>
         <ul>
-          <li><a href="#">Founder Letter</a></li>
-          <li><a href="#">To Parents</a></li>
-          <li><a href="#">To Educators</a></li>
-          <li><a href="#">Self-Directed Learning</a></li>
+          <li><a href="/letter?type=founder">Founder Letter</a></li>
+          <li><a href="/letter?type=parent">To Parents</a></li>
+          <li><a href="/letter?type=educator">To Educators</a></li>
+          <li><a href="https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers" target="_blank">Self-Directed Learning</a></li>
         </ul>
       </div>
       <div class="common-footer-item">
@@ -36,19 +36,17 @@
       <div class="common-footer-item">
         <div class="common-footer-title">About</div>
         <ul>
+          <li><a href="/whoWeAre">Who We Are</a></li>
           <li>
-            <router-link to="whoWeAre">Who We Are</router-link>
-          </li>
-          <li>
-            <a class="common-footer-icon-link" href="#" target="_blank">
+            <a class="common-footer-icon-link" href="https://www.facebook.com/paracraftpage/" target="_blank">
               <img class="icon" src="@/asset/images/fb.png" alt="" />
               <img class="icon-hover" src="@/asset/images/fb_color.png" alt="" />
             </a>
-            <a class="common-footer-icon-link" href="#" target="_blank">
+            <a class="common-footer-icon-link" href="https://www.youtube.com/channel/UC7pzmXOhkrPxFuOWfhoeSDA" target="_blank">
               <img class="icon" src="@/asset/images/youtube.png" alt="" />
               <img class="icon-hover" src="@/asset/images/youtube_color.png" alt="" />
             </a>
-            <a class="common-footer-icon-link" href="#" target="_blank">
+            <a class="common-footer-icon-link" href="mailto:lixizhi@paraengine.com" target="_blank">
               <img class="icon" src="@/asset/images/mail.png" alt="" />
               <img class="icon-hover" src="@/asset/images/mail_hover.png" alt="" />
             </a>
@@ -113,7 +111,7 @@ export default {
   }
   &-icon-link {
     margin-right: 20px;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
