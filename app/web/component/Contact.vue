@@ -52,6 +52,7 @@ export default {
     text-align: center;
     margin-top: 72px;
     margin-bottom: 40px;
+    font-family: 'OpenSans-Semibold';
     .title-text {
       margin: 0 15px;
     }
@@ -67,6 +68,7 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     min-width: 500px;
+    margin-bottom: 72px;
     &-text {
       width: 526px;
       font-size: 16px;
@@ -108,7 +110,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .paracraft-contact {
     .contact-title {
       margin: 20px auto;

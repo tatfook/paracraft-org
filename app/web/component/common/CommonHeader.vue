@@ -33,6 +33,8 @@ export default {
     flex: 1;
     font-size: 24px;
     font-weight: bold;
+    display: block;
+    cursor: pointer;
   }
   &-menus {
     a {

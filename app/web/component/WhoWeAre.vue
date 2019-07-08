@@ -46,6 +46,7 @@ export default {
     margin-bottom: 40px;
     .title-text {
       margin: 0 15px;
+      font-family: 'OpenSans-Semibold';
     }
     .title-box {
       display: inline-block;
@@ -56,11 +57,12 @@ export default {
   }
   &-main {
     max-width: 1072px;
-    margin: 0 auto 50px;
+    margin: 0 auto 72px;
+    line-height: 30px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1072px) {
   .who-we-are {
     &-title {
       margin: 20px auto;
