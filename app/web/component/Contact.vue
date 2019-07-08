@@ -32,6 +32,12 @@ export default {
   name: 'Contact',
   components: {
     ParacraftBanner
+  },
+  mounted() {
+    window.document.title = 'Contact'
+  },
+  destroyed() {
+    window.document.title = ''
   }
 }
 </script>
