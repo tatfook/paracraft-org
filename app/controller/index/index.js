@@ -2,8 +2,8 @@
 const egg = require('egg');
 module.exports = class IndexController extends egg.Controller {
   async index() {
-    const result = this.service.article.getArtilceList();
-    await this.ctx.render('index/index.js', result);
+    // const result = this.service.article.getArtilceList();
+    await this.ctx.renderClient('index/index.js');
   }
 
   async client() {
