@@ -1,6 +1,5 @@
 <template>
   <div class="paracraft">
-    paracraft home page
     <div class="paracraft-main">
       <router-view id="paracraft-page" />
     </div>
