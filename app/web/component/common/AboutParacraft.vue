@@ -16,7 +16,9 @@
       </div>
       <div class="about-paracraft-main-right">
         <div class="about-paracraft-main-right-video">
-          <video class="about-paracraft-main-right-video-content" controls :src="currenPlayVideoUrl"></video>
+          <!-- <video class="about-paracraft-main-right-video-content" controls :src="currenPlayVideoUrl" :poster="currentPoster"></video> -->
+          <iframe v-if="selectedVideo == 0" width="560" height="315" src="https://www.youtube.com/embed/KfpqXMLNtLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe v-else width="560" height="315" src="https://www.youtube.com/embed/uUP4ZOp9Vgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="about-paracraft-main-right-buttons">
           <span :class="['about-paracraft-main-right-buttons-button',{selected: 0 === selectedVideo}]" @click="playVideo(0)"><img class="play-icon" :src="0 === selectedVideo ? selectedPlayIcon_0 : selectedPlayIcon_1" alt="">What is Paracraft</span>
@@ -47,6 +49,11 @@ export default {
       return this.selectedVideo == 0
         ? 'https://www.youtube.com/watch?v=KfpqXMLNtLY'
         : 'https://www.youtube.com/watch?v=uUP4ZOp9Vgo'
+    },
+    currentPoster() {
+      return this.selectedVideo == 0
+        ? require('@/asset/images/what_is_paracraft.png')
+        : require('@/asset/images/basic_tutorial.png')
     }
   },
   methods: {
@@ -95,6 +102,8 @@ export default {
         margin: 20px auto;
         &-content {
           width: 100%;
+          height: 280px;
+          border-radius: 8px;
         }
       }
       &-buttons {
