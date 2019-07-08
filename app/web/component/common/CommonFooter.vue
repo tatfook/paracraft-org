@@ -38,15 +38,15 @@
         <ul>
           <li><a href="/whoWeAre">Who We Are</a></li>
           <li>
-            <a class="common-footer-icon-link" href="#" target="_blank">
+            <a class="common-footer-icon-link" href="https://www.facebook.com/paracraftpage/" target="_blank">
               <img class="icon" src="@/asset/images/fb.png" alt="" />
               <img class="icon-hover" src="@/asset/images/fb_color.png" alt="" />
             </a>
-            <a class="common-footer-icon-link" href="#" target="_blank">
+            <a class="common-footer-icon-link" href="https://www.youtube.com/channel/UC7pzmXOhkrPxFuOWfhoeSDA" target="_blank">
               <img class="icon" src="@/asset/images/youtube.png" alt="" />
               <img class="icon-hover" src="@/asset/images/youtube_color.png" alt="" />
             </a>
-            <a class="common-footer-icon-link" href="#" target="_blank">
+            <a class="common-footer-icon-link" href="mailto:lixizhi@paraengine.com" target="_blank">
               <img class="icon" src="@/asset/images/mail.png" alt="" />
               <img class="icon-hover" src="@/asset/images/mail_hover.png" alt="" />
             </a>
