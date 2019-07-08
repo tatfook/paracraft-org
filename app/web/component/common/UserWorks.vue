@@ -155,13 +155,16 @@ export default {
   }
   &-bgpic-3 {
     position: absolute;
-    bottom: 100px;
+    bottom: 150px;
     left: -100px;
+    width: 320px;
   }
   &-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    margin-bottom: 40px;
     &-icon {
       margin: 0 20px;
     }

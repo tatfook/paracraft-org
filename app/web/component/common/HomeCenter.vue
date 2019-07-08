@@ -106,7 +106,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-center {
-  background: #f09e1b;
+  background: #ffc946;
   position: relative;
   &-bgpic-1 {
     position: absolute;
@@ -135,16 +135,21 @@ export default {
           .el-carousel__item {
             .carousel-img {
               width: 100%;
+              border-radius: 6px;
             }
           }
         }
       }
       &-title {
+        font-size: 24px;
+        font-family: 'HelveticaNeue';
+        margin: 0 0 16px 0;
         &-icon {
           margin-right: 12px;
         }
       }
       &-videoUrl {
+        border-radius: 6px;
         width: 100%;
       }
       &-link {
@@ -156,6 +161,18 @@ export default {
     }
     &-right {
       flex: 1;
+    }
+  }
+}
+@media screen and (min-width: 1930px) {
+  .home-center {
+    &-bgpic-1 {
+      right: 200px;
+      bottom: 300px;
+    }
+    &-bgpic-2 {
+      top: 270px;
+      left: 300px;
     }
   }
 }
