@@ -6,9 +6,6 @@
       <parent-letter class="letter-page-content" v-if="letterType === 'parent'"></parent-letter>
       <founder-letter class="letter-page-content" v-if="letterType === 'founder'"></founder-letter>
       <educator-letter class="letter-page-content" v-if="letterType === 'educator'"></educator-letter>
-      <!-- div.letter-page- -->
-      <!-- <img src="@/asset/images/letter-border.png" alt="">
-    <img src="@/asset/images/letter-center.png" alt=""> -->
     </div>
   </div>
 </template>

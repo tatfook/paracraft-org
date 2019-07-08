@@ -1,0 +1,79 @@
+<template>
+  <div class="who-we-are">
+    <div class="who-we-are-banner">
+      <paracraft-banner></paracraft-banner>
+    </div>
+    <div class="who-we-are-title">
+      <span class="title-box"></span>
+      <span class="title-text">Who We Are</span>
+      <span class="title-box"></span>
+    </div>
+    <div class="who-we-are-main">
+      Our mission is to create a parallel world, for which we coined the word “ParaWorld”, where everyone can create their own games or creative 3D works, where people can keep themselves busy, immersed in their creative work.
+      Starting from 2004, our founder Xizhi Li had been occupied in pursuing this dream. First he invented a programming language named NPL (Neural Parallel Language) whose built-in mechanism mimics how human brain works, with programs acting like neurons that can be activated over the network, so these neuron-like programs can work in parallel, just like how human brain does. Then he invented ParaEngine, which is a 3D game engine. Then based on ParaEngine, he came up with Paracraft, which is a powerful tool for people to build 3D animations or games, and which is also a great tool for people to learn of programming. So with Paracraft, finally there is a software tool that people can use to unleash their imagination and express themselves powerfully and beautifully in the 3D world, thus a ParaWorld is possible.
+      With this ParaWorld, learning and education can be rich and easy. There are unlimited opportunities in how Paracraft can be used to change our learning/education.
+      Please check out our users’ works, we hope you can see the potential of Paracraft in helping people create and learn. We welcome you to join us to make it true that everyone can create their own games or creative 3D works!
+    </div>
+  </div>
+</template>
+
+<script>
+import ParacraftBanner from './common/ParacraftBanner'
+export default {
+  name: 'WhoWeAre',
+  components: {
+    ParacraftBanner
+  },
+  mounted() {
+    document.title = 'Self-Directed Learning | Paracraft;'
+  },
+  destroyed() {
+    document.title = ''
+  }
+}
+</script>
+
+
+<style lang="scss" scoped>
+.who-we-are {
+  max-width: 1600px;
+  margin: 0 auto;
+  &-title {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 40px;
+    .title-text {
+      margin: 0 15px;
+    }
+    .title-box {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      background: url('../asset/images/box2.png');
+    }
+  }
+  &-main {
+    max-width: 1072px;
+    margin: 0 auto 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are {
+    &-title {
+      margin: 20px auto;
+    }
+
+    &-main {
+      min-width: auto;
+      padding: 0 20px;
+    }
+  }
+}
+</style>
+
+
+
+

@@ -5,6 +5,10 @@ module.exports = {
     imagemini: false
   },
   alias: {
-    '@': 'app/web'
+    '@': 'app/web',
+    asset: 'app/web/assets',
+  },
+  loaders: {
+    scss: true,
   },
 };
