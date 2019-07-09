@@ -78,3 +78,28 @@ export default {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (max-width: 768px) {
+  .letter-page {
+    padding: 2px 0;
+    &-box {
+      padding: 24px 16px;
+      &:before {
+        display: none;
+      }
+    }
+    &-seal {
+      width: 150px;
+      height: auto;
+      right: 8px;
+      bottom: 8px;
+    }
+    &-content {
+      margin-top: 36px;
+    }
+    /deep/.parent-letter-title {
+      box-shadow: 0px 10px 0px 0px #ac805a, 0 0 0 16px #fff, 0 20px 0 0 #ac805a;
+    }
+  }
+}
+</style>
