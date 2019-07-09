@@ -231,7 +231,8 @@ export default {
     &-cabinet {
       justify-content: center;
       &-box {
-        width: 173px;
+        width: 46%;
+        box-sizing: border-box;
         padding: 10px 10px 5px;
         margin: 4px 4px;
         &-video {

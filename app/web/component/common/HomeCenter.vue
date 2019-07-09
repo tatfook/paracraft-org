@@ -171,6 +171,9 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .home-center {
+    &-bgpic-1,&-bgpic-2,&-bgpic-3 {
+      display: none;
+    }
     &-section {
       .part-box {
         .video-iframe {
