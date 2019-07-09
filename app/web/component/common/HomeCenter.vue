@@ -196,21 +196,6 @@ export default {
       top: 270px;
       left: 300px;
     }
-    &-section {
-      .part-box {
-        border: 1px solid red;
-        /deep/ .el-carousel {
-          .el-carousel__container {
-            height: calc((100vw - 20px) / 542 * 304) !important;
-          }
-        }
-      }
-    }
   }
-  // .el-carousel {
-  //           .el-carousel__container {
-  //             height: calc((100vw - 20px) / 502 * 270) !important;
-  //           }
-  //         }
 }
 </style>
