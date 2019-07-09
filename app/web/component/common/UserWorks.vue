@@ -2,7 +2,7 @@
   <div class="user-works">
     <div class="user-works-title">
       <span class="user-works-title-icon"><img src="@/asset/images/box2.png" alt=""></span>
-      <span class="user-works-title-text">Recommended User works</span>
+      <span class="user-works-title-text">Recommended User Works</span>
       <span class="user-works-title-icon"><img src="@/asset/images/box2.png" alt=""></span>
     </div>
     <div class="user-works-cabinet">
