@@ -4,7 +4,7 @@
       <div class="home-center-section-left">
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">An Upgrade of Scratch</h5>
-          <el-carousel height="304px" trigger="click" :autoplay="false">
+          <el-carousel height="304px">
             <el-carousel-item v-for="(img,index) in scratchCarouselData" :key="index">
               <img class="carousel-img" :src="img.imgUrl" alt="">
             </el-carousel-item>
