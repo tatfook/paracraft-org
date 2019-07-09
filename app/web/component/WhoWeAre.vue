@@ -28,7 +28,7 @@ export default {
     document.title = 'Self-Directed Learning | Paracraft;'
   },
   destroyed() {
-    document.title = ''
+    document.title = 'Paracraft, the software for youth programming'
   }
 }
 </script>
