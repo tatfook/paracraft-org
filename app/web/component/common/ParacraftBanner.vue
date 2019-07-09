@@ -3,7 +3,7 @@
     <span class="banner-slogan">
       <img class="banner-box-icon" src="../../asset/images/box.png" alt="">
       <div class="banner-slogan-normal">
-        Pracraft,the software
+        Paracraft,the software
       </div>
       <div class="banner-slogan-normal">
         for youth programming
