@@ -44,8 +44,6 @@ export default {
 
 <style lang="scss" scoped>
 .who-we-are {
-  max-width: 1600px;
-  margin: 0 auto;
   &-title {
     color: #333;
     font-size: 32px;
