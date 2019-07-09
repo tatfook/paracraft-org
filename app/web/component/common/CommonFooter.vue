@@ -12,12 +12,12 @@
               </a>
             </template>
             <template v-else>
-              <a :href="linkItem.link" :target="linkItem.target || '_self'">{{linkItem.text}}</a>
+              <a class="common-footer-link" :href="linkItem.link" :target="linkItem.target || '_self'">{{linkItem.text}}</a>
             </template>
           </li>
         </ul>
       </div>
-      <el-dropdown class="common-footer-phone common-footer-item" v-for="(footerItem, index) in footerData" :key='`footerItem${index}`' placement="top">
+      <el-dropdown class="common-footer-phone common-footer-item" v-for="(footerItem, index) in footerData" :key='`footerItemPhone${index}`' placement="top">
         <span class="el-dropdown-link">
           {{footerItem.title}}<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
@@ -29,7 +29,7 @@
               </a>
             </template>
             <template v-else>
-              <a :href="linkItem.link" :target="linkItem.target || '_self'">{{linkItem.text}}</a>
+              <a class="common-footer-link" :href="linkItem.link" :target="linkItem.target || '_self'">{{linkItem.text}}</a>
             </template>
           </el-dropdown-item>
         </el-dropdown-menu>
@@ -100,9 +100,10 @@ export default {
           title: 'Developers',
           links: [
             {
-              link: 'https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers',
+              link:
+                'https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers',
               target: '_blank',
-              text:'To Developers'
+              text: 'To Developers'
             },
             {
               link: 'https://github.com/LiXizhi/NPLRuntime/wiki',
@@ -190,9 +191,13 @@ export default {
     display: none;
     cursor: pointer;
   }
-  a {
+  &-link {
     font-size: 16px;
     color: #666;
+  }
+  &-icon-link {
+    margin-right: 20px;
+    font-size: 0;
     &:hover {
       text-decoration: none;
       color: #fff;
@@ -203,9 +208,6 @@ export default {
         display: inline-block;
       }
     }
-  }
-  &-icon-link {
-    margin-right: 20px;
     &:last-child {
       margin-right: 0;
     }
