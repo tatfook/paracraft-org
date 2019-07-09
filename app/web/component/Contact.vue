@@ -44,8 +44,6 @@ export default {
 
 <style lang="scss" scoped>
 .paracraft-contact {
-  max-width: 1600px;
-  margin: 0 auto;
   .contact-title {
     color: #333;
     font-size: 32px;
@@ -130,7 +128,8 @@ export default {
         .link-item {
           width: 90%;
           margin: 0 auto 20px;
-          padding-left: 40px;
+          padding-left: 20px;
+          font-size: 16px;
         }
       }
     }
