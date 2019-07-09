@@ -25,7 +25,7 @@ export default {
     ParacraftBanner
   },
   mounted() {
-    document.title = 'Self-Directed Learning | Paracraft;'
+    document.title = 'Who We Are | Paracraft'
   },
   destroyed() {
     document.title = 'Paracraft, the software for youth programming'
