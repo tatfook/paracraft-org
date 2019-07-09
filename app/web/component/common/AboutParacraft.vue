@@ -27,10 +27,10 @@
       </div>
     </div>
     <div class="about-paracraft-letters">
-      <a class="about-paracraft-letters-link" href="https://keepwork.com/leonliu/asde/how_to_learn_programming" target="_blank"><img src="@/asset/images/letter.png" alt="">Founder Letter</a>
-      <a class="about-paracraft-letters-link" href="https://keepwork.com/official/paracraft/to-parents" target="_blank"><img src="@/asset/images/letter.png" alt="">To Parents</a>
-      <a class="about-paracraft-letters-link" href="https://keepwork.com/official/paracraft/to-educators" target="_blank"><img src="@/asset/images/letter.png" alt="">To Educators</a>
-      <a class="about-paracraft-letters-link" href="https://keepwork.com/official/paracraft/to-developers" target="_blank"><img src="@/asset/images/letter.png" alt="">To Developers</a>
+      <a class="about-paracraft-letters-link" href="/letter?type=founder"><img src="@/asset/images/letter.png" alt="">Founder Letter</a>
+      <a class="about-paracraft-letters-link" href="/letter?type=parent"><img src="@/asset/images/letter.png" alt="">To Parents</a>
+      <a class="about-paracraft-letters-link" href="/letter?type=educator"><img src="@/asset/images/letter.png" alt="">To Educators</a>
+      <a class="about-paracraft-letters-link" href="https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers" target="_blank"><img src="@/asset/images/letter.png" alt="">To Developers</a>
     </div>
   </div>
 </template>

@@ -5,7 +5,7 @@
       How to learn programming
       <img class="founder-letter-box-right" src="@/asset/images/box2.png" alt=""></div>
     <div class="founder-letter-content">
-      <p>Recently I am thinking how my kid is going to learn programming when he is a bit older. Surly it depends on his interest. But as a programmer of 30 years and as I am generally interested and conerned with education, I looked into the current youth programming situation. So I played teachergaming in details, <a href="http://tynker.com">tynker.com</a>, google classroom in additional to dozens of similar platforms and games.</p>
+      <p>Recently I am thinking how my kid is going to learn programming when he is a bit older. Surly it depends on his interest. But as a programmer of 30 years and as I am generally interested and conerned with education, I looked into the current youth programming situation. So I played teachergaming in details, tynker.com, google classroom in additional to dozens of similar platforms and games.</p>
       <p>The current platforms for teaching kids programming are quite wrong to me, I would rather my kid to play good games than to learn programming on these platforms. So how can a professional programmer like me teach his/her own children programming? This is the problem I want to solve with our software and lessons. Here I want to offer an autobiography of my psersonal life journey of programming since age 7.</p>
       <p>I started programming since age 7. There are a few key points from my own experiences, which I hope to bring to all kids around the world as if I was always by their sides.</p>
       <p>Key Point-1<br>
