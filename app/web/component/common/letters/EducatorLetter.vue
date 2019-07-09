@@ -18,7 +18,13 @@
 </template>
 <script>
 export default {
-  name: 'EducatorLetter'
+  name: 'EducatorLetter',
+  created() {
+    window.document.title = 'To Educators | Paracraft'
+  },
+  destroyed() {
+    window.document.title = ''
+  }
 }
 </script>
 <style lang="scss" scoped>

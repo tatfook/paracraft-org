@@ -33,7 +33,13 @@
 </template>
 <script>
 export default {
-  name: 'ParentLetter'
+  name: 'ParentLetter',
+  created() {
+    window.document.title = 'To Parents | Paracraft'
+  },
+  destroyed() {
+    window.document.title = ''
+  }
 }
 </script>
 <style lang="scss" scoped>

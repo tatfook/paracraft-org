@@ -43,7 +43,13 @@
 </template>
 <script>
 export default {
-  name: 'FounderLetter'
+  name: 'FounderLetter',
+  created() {
+    window.document.title = 'Founder Letter | Paracraft'
+  },
+  destroyed() {
+    window.document.title = ''
+  }
 }
 </script>
 
