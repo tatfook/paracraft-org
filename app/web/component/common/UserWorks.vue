@@ -143,6 +143,7 @@ export default {
   background: #4793ff;
   padding: 72px 0 0;
   position: relative;
+  font-family: 'HelveticaNeue';
   &-bgpic-1 {
     position: absolute;
     top: 300px;
@@ -171,7 +172,6 @@ export default {
     &-text {
       font-size: 26px;
       color: #fff;
-      font-family: 'OpenSans-Semibold';
     }
   }
   &-cabinet {
@@ -197,6 +197,7 @@ export default {
         position: relative;
         &-cover {
           width: 100%;
+          border-radius: 6px;
           height: 143px;
           object-fit: cover;
         }
@@ -218,6 +219,35 @@ export default {
     height: 71px;
     margin-top: 72px;
     background: url(../../asset/images/semicircle.png);
+  }
+}
+@media screen and (max-width: 768px) {
+  .user-works {
+    &-title {
+      &-text {
+        font-size: 20px;
+      }
+    }
+    &-cabinet {
+      justify-content: center;
+      &-box {
+        width: 173px;
+        padding: 10px 10px 5px;
+        margin: 4px 4px;
+        &-video {
+          &-cover {
+            height: 100px;
+          }
+          &-play {
+            width: 30px;
+            opacity: 1;
+          }
+        }
+        &-name {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
 </style>

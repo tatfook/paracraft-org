@@ -33,7 +33,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
 .who-we-are {
   max-width: 1600px;
