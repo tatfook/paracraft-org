@@ -100,6 +100,11 @@ export default {
           title: 'Developers',
           links: [
             {
+              link: 'https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers',
+              target: '_blank',
+              text:'To Developers'
+            },
+            {
               link: 'https://github.com/LiXizhi/NPLRuntime/wiki',
               target: '_blank',
               text: 'NPL'
