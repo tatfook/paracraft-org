@@ -6,7 +6,7 @@
     <div class="contact-title"> <span class="title-box"></span><span class="title-text">Contact</span><span class="title-box"></span></div>
     <div class="contact-main">
       <div class="contact-main-text">
-       Paracraft’s mission is to create a parallel world, for which we coined the word “ParaWorld”, where everyone can create their own games or creative 3D works, where people can keep themselves busy, immersed in their creative work. We are well aware such a dream needs a large community. If you share our mission, we welcome you to join us to expand our community. Together, let’s make it!
+        Paracraft’s mission is to create a parallel world, for which we coined the word “ParaWorld”, where everyone can create their own games or creative 3D works, where people can keep themselves busy, immersed in their creative work. We are well aware such a dream needs a large community. If you share our mission, we welcome you to join us to expand our community. Together, let’s make it!
       </div>
       <div class="contact-main-link">
         <a class="link-item clear-link" href="https://www.facebook.com/paracraftpage" target="_blank">
@@ -52,7 +52,8 @@ export default {
     text-align: center;
     margin-top: 72px;
     margin-bottom: 40px;
-    font-family: 'OpenSans-Semibold';
+    font-family: 'HelveticaNeue', 'OpenSans-Semibold';
+    font-weight: bold;
     .title-text {
       margin: 0 15px;
     }

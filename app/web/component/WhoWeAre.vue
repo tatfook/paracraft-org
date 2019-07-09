@@ -41,6 +41,7 @@ export default {
 }
 </script>
 
+
 <style lang="scss" scoped>
 .who-we-are {
   max-width: 1600px;
@@ -53,7 +54,8 @@ export default {
     margin-bottom: 40px;
     .title-text {
       margin: 0 15px;
-      font-family: 'OpenSans-Semibold';
+      font-family: "HelveticaNeue", "OpenSans-Semibold";
+      font-weight: bold;
     }
     .title-box {
       display: inline-block;
