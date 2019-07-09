@@ -37,7 +37,7 @@ export default {
     window.document.title = 'Contact | Paracraft'
   },
   destroyed() {
-    window.document.title = ''
+    window.document.title = 'Paracraft, the software for youth programming'
   }
 }
 </script>
