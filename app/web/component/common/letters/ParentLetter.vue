@@ -5,7 +5,7 @@
       To Parents
       <img class="parent-letter-box-right" src="@/asset/images/box2.png" alt=""></div>
     <div class="parent-letter-content">
-      <p>First we wish you have read Scratch founder Mitchel Resnick’s wonderful essays on programming and learning. Particularly, we recommend you read this and this.</p>
+      <p>First we wish you have read Scratch founder Mitchel Resnick’s wonderful essays on programming and learning. Particularly, we recommend you read <a href="https://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf" target="_blank">this</a> and <a href="https://www.edutopia.org/kindergarten-creativity-collaboration-lifelong-learning" target="_blank">this</a>.</p>
       <p>Here at Paracraft, we agree 100% with the ideas and believes outlined in the above two essays. Actually Paracraft itself is a strong testimony to those ideas and believes.</p>
       <p>We observe over and over again that when kids first see paracraft, how they get drawn immediately to it and start playing right away. In a school where students just started to know paracraft by watching a 26 mins introductory tutorial video, which only teaches of installation and some basic operations of the software, they started exploring the software immediately and were able to create amazing animations and games. The story of paracraft says strongly that learning is driven by interest. When you see children play and learn paracraft, it is so obvious that learning without interest is not learning at all.</p>
       <p>For people just starting to learn coding, it can be a pain in the neck to type those lines of code out and correcting all the mistakes in order to get the code run correctly. If you have ever learned of programming, you know that. However, we see all the kids diligently typing in the lines of code, correcting them over and over again to get their little programs running. Paracraft is a powerful tool to create 3D scenes and animation movies. If you see our recommended works, you know what complex works can be created using paracraft. There are many shortcuts for building 3D scenes involving keyboard and mouse. The movie editor is also industrial level. However, we witnessed kids grasping all these skills quickly by playing with it and by talking with each other and sharing tips together, like what material block is suited for building what, how to search and find a block you want, how to hide certain things nicely, etc. Many of the things they are sharing with each other are not taught by our instructor. The children just pick them up from their playing with paracraft.</p>
@@ -52,6 +52,9 @@ export default {
       vertical-align: unset;
       margin-left: 16px;
     }
+  }
+  a {
+    text-decoration: underline;
   }
 }
 </style>

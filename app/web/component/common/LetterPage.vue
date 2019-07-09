@@ -73,5 +73,8 @@ export default {
     right: 56px;
     bottom: 56px;
   }
+  &-content {
+    position: relative;
+  }
 }
 </style>

@@ -7,7 +7,6 @@
           <li><a href="/letter?type=founder">Founder Letter</a></li>
           <li><a href="/letter?type=parent">To Parents</a></li>
           <li><a href="/letter?type=educator">To Educators</a></li>
-          <li><a href="https://github.com/LiXizhi/ParaCraftSDK/wiki/LetterToDevelopers" target="_blank">Self-Directed Learning</a></li>
         </ul>
       </div>
       <div class="common-footer-item">
