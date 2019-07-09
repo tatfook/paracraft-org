@@ -1,18 +1,20 @@
 <template>
-  <div class="banner-container">
-    <span class="banner-slogan">
-      <img class="banner-box-icon" src="../../asset/images/box.png" alt="">
-      <div class="banner-slogan-normal">
-        Pracraft,the software
-      </div>
-      <div class="banner-slogan-normal">
-        for youth programming
-      </div>
-      <div class="banner-slogan-small">
-        Learn how to “program”, learn how to learn
-      </div>
-      <span class="banner-pointer"></span>
-    </span>
+  <div class="banner-container-wrap">
+    <div class="banner-container">
+      <span class="banner-slogan">
+        <img class="banner-box-icon" src="../../asset/images/box.png" alt="">
+        <div class="banner-slogan-normal">
+          Paracraft,the software
+        </div>
+        <div class="banner-slogan-normal">
+          for youth programming
+        </div>
+        <div class="banner-slogan-small">
+          Learn how to “program”, learn how to learn
+        </div>
+        <span class="banner-pointer"></span>
+      </span>
+    </div>
   </div>
 </template>
 
@@ -24,12 +26,14 @@ export default {
 
 <style lang="scss" scoped>
 .banner-container {
+  &-wrap {
+    background: rgb(70, 145, 255);
+  }
   height: 400px;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: url('../../asset/images/banner.png');
+  background: url('../../asset/images/banner.png') no-repeat center;
   position: relative;
-
   .banner-slogan {
     position: absolute;
     font-family: 'OpenSans';
@@ -68,7 +72,7 @@ export default {
     background-image: url('../../asset/images/banner2.png');
     background-color: #4b9aff;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 70%;
     background-position: 50% 222px;
     height: 443px;
     .banner-box-icon {

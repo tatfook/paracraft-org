@@ -17,8 +17,8 @@
       <div class="about-paracraft-main-right">
         <div class="about-paracraft-main-right-video">
           <!-- <video class="about-paracraft-main-right-video-content" controls :src="currenPlayVideoUrl" :poster="currentPoster"></video> -->
-          <iframe v-if="selectedVideo == 0" width="560" height="315" src="https://www.youtube.com/embed/KfpqXMLNtLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe v-else width="560" height="315" src="https://www.youtube.com/embed/uUP4ZOp9Vgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe v-if="selectedVideo == 0" class="video-iframe" src="https://www.youtube.com/embed/6bn4EPZyMXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe v-else class="video-iframe" src="https://www.youtube.com/embed/uUP4ZOp9Vgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="about-paracraft-main-right-buttons">
           <span :class="['about-paracraft-main-right-buttons-button',{selected: 0 === selectedVideo}]" @click="playVideo(0)"><img class="play-icon" :src="0 === selectedVideo ? selectedPlayIcon_0 : selectedPlayIcon_1" alt="">What is Paracraft</span>
@@ -67,6 +67,7 @@ export default {
 .about-paracraft {
   max-width: 1200px;
   margin: 60px auto;
+  font-family: 'HelveticaNeue';
   &-title {
     display: flex;
     justify-content: center;
@@ -77,12 +78,11 @@ export default {
     }
     &-text {
       font-size: 26px;
-      // font-weight: bold;
-      font-family: 'OpenSans-Semibold';
     }
   }
   &-main {
     display: flex;
+    flex-wrap: wrap;
     &-left {
       width: 558px;
       font-size: 16px;
@@ -100,6 +100,10 @@ export default {
         padding: 16px;
         border-radius: 8px;
         margin: 20px auto;
+        .video-iframe {
+          width: 560px;
+          height: 315px;
+        }
         &-content {
           width: 100%;
           height: 280px;
@@ -132,6 +136,7 @@ export default {
   }
   &-letters {
     display: flex;
+    flex-wrap: wrap;
     &-link {
       text-align: center;
       flex: 1;
@@ -142,6 +147,51 @@ export default {
       }
       & + .about-paracraft-letters-link {
         border-left: 1px solid #ccc;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-paracraft {
+    margin: 30px auto;
+    &-title {
+      &-text {
+        font-size: 20px;
+      }
+    }
+    &-main {
+      &-left {
+        width: 100%;
+        padding: 0 20px;
+      }
+      &-right {
+        width: 100%;
+        margin-bottom: 30px;
+        &-video {
+          .video-iframe {
+            width: 100%;
+            height: 215px;
+          }
+        }
+        &-buttons {
+          &-button {
+            margin: 10px;
+            padding: 12px 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &-letters {
+      display: flex;
+      flex-wrap: wrap;
+      &-link {
+        min-width: 160px;
+        text-align: left;
+        margin: 12px;
+        & + .about-paracraft-letters-link {
+          border-left: none;
+        }
       }
     }
   }
