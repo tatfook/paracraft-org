@@ -6,7 +6,7 @@
     <div class="contact-title"> <span class="title-box"></span><span class="title-text">Contact</span><span class="title-box"></span></div>
     <div class="contact-main">
       <div class="contact-main-text">
-        We share the same believes as Scratch in the importance of programming as well as how best to learn. Indeed, you can think of us as an upgrade of Scratch. We made it 3D, and thus it is more fun and attractive to children. It is a great environment for children to start learning of programming. And you can progress smoothly to a much deeper level and getting really serious with programming if you really fall in love with programming.
+       Paracraft’s mission is to create a parallel world, for which we coined the word “ParaWorld”, where everyone can create their own games or creative 3D works, where people can keep themselves busy, immersed in their creative work. We are well aware such a dream needs a large community. If you share our mission, we welcome you to join us to expand our community. Together, let’s make it!
       </div>
       <div class="contact-main-link">
         <a class="link-item clear-link" href="https://www.facebook.com/paracraftpage" target="_blank">
@@ -70,7 +70,7 @@ export default {
     min-width: 500px;
     margin-bottom: 72px;
     &-text {
-      width: 526px;
+      width: 500px;
       font-size: 16px;
       color: #666;
       line-height: 30px;
