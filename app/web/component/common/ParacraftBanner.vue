@@ -1,7 +1,7 @@
 <template>
   <div class="banner-container">
-    <img class="banner-box-icon" src="../../asset/images/box.png" alt="">
     <span class="banner-slogan">
+      <img class="banner-box-icon" src="../../asset/images/box.png" alt="">
       <div class="banner-slogan-normal">
         Pracraft,the software
       </div>
@@ -11,8 +11,8 @@
       <div class="banner-slogan-small">
         Learn how to “program”, learn how to learn
       </div>
+      <span class="banner-pointer"></span>
     </span>
-    <span class="banner-pointer"></span>
   </div>
 </template>
 
@@ -27,32 +27,21 @@ export default {
   height: 400px;
   max-width: 1600px;
   margin: 0 auto;
-  background: url('../../asset/images/banner.png');
+  background-image: url('../../asset/images/banner.png');
   position: relative;
-  .banner-box-icon {
-    position: absolute;
-    top: 70px;
-    left: 250px;
-  }
-  .banner-pointer {
-    position: absolute;
-    top: 310px;
-    left: 250px;
-    display: block;
-    width: 32px;
-    height: 9px;
-    background-color: #30fbff;
-    border-radius: 5.5px;
-  }
+
   .banner-slogan {
     position: absolute;
     font-family: 'OpenSans';
-    top: 145px;
-    left: 250px;
+    top: 70px;
+    left: 200px;
     display: block;
     width: 436px;
     color: #fff;
     font-size: 32px;
+    .banner-box-icon {
+      margin-bottom: 40px;
+    }
     &-normal {
       line-height: 42px;
       font-weight: bold;
@@ -61,31 +50,46 @@ export default {
       margin-top: 20px;
       font-size: 20px;
       color: rgba(255, 255, 255, 0.6);
-      font-family: 'OpenSans-Semibold'
+      font-family: 'OpenSans-Semibold';
+    }
+    .banner-pointer {
+      display: block;
+      margin-top: 32px;
+      width: 32px;
+      height: 9px;
+      background-color: #30fbff;
+      border-radius: 5.5px;
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .banner-container {
-    $left: 40px;
+    background-image: url('../../asset/images/banner2.png');
+    background-color: #4b9aff;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 222px;
+    height: 443px;
     .banner-box-icon {
-      left: $left;
-      top: 140px;
+      display: none;
     }
     .banner-slogan {
-      left: $left;
-      top: 200px;
+      position: static;
+      width: 290px;
+      margin: 0 auto;
+      padding-top: 45px;
       &-normal {
-        font-size: 26px;
+        font-size: 24px;
+        line-height: 34px;
       }
       &-small {
-        font-size: 16px;
+        font-size: 14px;
+        margin-top: 24px;
       }
-    }
-    .banner-pointer {
-      left: $left;
-      top: 360px;
+      .banner-pointer {
+        margin-top: 34px;
+      }
     }
   }
 }
