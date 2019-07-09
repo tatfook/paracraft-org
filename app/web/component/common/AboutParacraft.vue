@@ -17,7 +17,7 @@
       <div class="about-paracraft-main-right">
         <div class="about-paracraft-main-right-video">
           <!-- <video class="about-paracraft-main-right-video-content" controls :src="currenPlayVideoUrl" :poster="currentPoster"></video> -->
-          <iframe v-if="selectedVideo == 0" class="video-iframe" src="https://www.youtube.com/embed/KfpqXMLNtLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe v-if="selectedVideo == 0" class="video-iframe" src="https://www.youtube.com/embed/6bn4EPZyMXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe v-else class="video-iframe" src="https://www.youtube.com/embed/uUP4ZOp9Vgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="about-paracraft-main-right-buttons">
