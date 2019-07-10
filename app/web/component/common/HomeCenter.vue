@@ -34,7 +34,8 @@
       <div class="home-center-section-right">
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Learn how to “program”, learn how to learn</h5>
-          <iframe class="video-iframe" src="https://www.youtube.com/embed/6G6M6PzGZic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <iframe class="video-iframe" src="https://www.youtube.com/embed/6G6M6PzGZic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video class="video-iframe" src="https://api.keepwork.com/storage/v0/siteFiles/770/raw#宣传视频01.mp4" controls></video>
           <p>“Program” means to build things up. Programmers are builders, they build works to express themselves, to change things around, or to even change the world. In paracraft, you learn the complete skill set in building 3D works, from 3D scene building, movie making, to coding and CAD. You learn of design, troubleshooting, collaborating, and so on.</p>
           <p>“Program” also means to build up abstract models for complex systems, dissecting the whole abstract model into multiple composing parts on various layers so you can construct the whole by putting parts together. Thus “program” contains the systemic thinking methodologies. By learning how to program, you learn how to build up abstract models for various domains and how to tackle complex systems, the essential skills needed in today’s creative knowledge-based economy.</p>
         </div>
