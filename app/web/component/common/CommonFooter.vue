@@ -118,7 +118,7 @@ export default {
           ]
         },
         {
-          title: 'About',
+          title: 'About Us',
           links: [
             {
               link: '/whoWeAre',
