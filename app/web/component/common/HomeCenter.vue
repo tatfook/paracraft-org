@@ -4,22 +4,22 @@
       <div class="home-center-section-left">
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">An Upgrade of Scratch</h5>
-          <el-carousel height="304px">
+          <el-carousel height="304px" :interval="4000">
             <el-carousel-item v-for="(img,index) in scratchCarouselData" :key="index">
               <img class="carousel-img" :src="img.imgUrl" alt="">
             </el-carousel-item>
           </el-carousel>
           <p>Scratch founder Mitchel Resnick said wonderfully about why people should learn programming and what is the best way to learn. We agree with him 100 percent, and we are working hard to achieve the same mission.</p>
-          <p>Paracraft is an upgrade of scratch. Paracraft is 3D, and it automatically converts blocks to code. Paracraft also has powerful movie editor that allow you create rich movies and games.</p>
+          <p>Paracraft is an upgrade of scratch. Paracraft is 3D, and it automatically converts blocks to code. Paracraft also has a powerful movie editor that allows you create rich movies and games.</p>
         </div>
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Compare with MineCraft</h5>
-          <el-carousel height="304px">
+          <el-carousel height="304px" :interval="4000">
             <el-carousel-item v-for="(img,index) in mineCraftCarouselData" :key="index">
               <img class="carousel-img" :src="img.imgUrl" alt="">
             </el-carousel-item>
           </el-carousel>
-          <p>At a later stage, paracraft learned and adopted Minecraft’s “blocky” visual style and the block-building fundamentals. So pararcraft looks like Minecraft. But there are some major difference that make paracraft more powerful and appealing to youth programming:</p>
+          <p>At a later stage, paracraft learned and adopted Minecraft’s “blocky” visual style and the block-building fundamentals. So pararcraft looks like Minecraft. But there are some major differences that make paracraft more powerful and appealing to youth programming:</p>
           <p>
             ☉ complex movie editor<br>
             ☉ using bone blocks to define joints<br>
@@ -28,7 +28,7 @@
         </div>
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Research</h5>
-          <p>We believe paracaft is the most suited tool for youth programming and for fostering a learning environment that is more a rich playground, where self-directed learning is happening all the time naturally. We welcome researchers to use our data or collect data by themselves to do research on how paracraft help children learn programming and learn how to learn. We are also looking for universities and research institutions to set up labs for such research. It is in our strong belief that <strong>learn how to “program”, learn how to learn</strong> is essential for today’s education. So if you are researchers interested in doing such research or setting up such labs, please contact us.</p>
+          <p>We believe paracaft is the most suited tool for youth programming and for fostering a learning environment that is more a rich playground, where self-directed learning is happening all the time naturally. We welcome researchers to use our data or collect data by themselves to do research on how paracraft helps children learn programming and learn how to learn. We are also looking for universities and research institutions to set up labs for such research. It is in our strong belief that <strong>learn how to “program”, learn how to learn</strong> is essential for today’s education. So if you are researchers interested in doing such research or setting up such labs, please contact us.</p>
         </div>
       </div>
       <div class="home-center-section-right">
@@ -40,7 +40,7 @@
         </div>
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Paracraft in Schools</h5>
-          <el-carousel height="304px">
+          <el-carousel height="304px" :interval="4000">
             <el-carousel-item v-for="(img,index) in paracraftCarouselData" :key="index">
               <img class="carousel-img" :src="img.imgUrl" alt="">
             </el-carousel-item>
@@ -136,6 +136,15 @@ export default {
       }
       /deep/ .el-carousel {
         .el-carousel__container {
+          .el-carousel__arrow {
+            background: #fff;
+            .el-icon-arrow-left,.el-icon-arrow-right{
+              font-size: 16px;
+              color: #333;
+              font-weight: 800;
+              line-height: 36px;
+            }
+          }
           .el-carousel__item {
             .carousel-img {
               width: 100%;
