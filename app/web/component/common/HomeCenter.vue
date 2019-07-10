@@ -10,7 +10,7 @@
             </el-carousel-item>
           </el-carousel>
           <p>Scratch founder Mitchel Resnick said wonderfully about why people should learn programming and what is the best way to learn. We agree with him 100 percent, and we are working hard to achieve the same mission.</p>
-          <p>Paracraft is an upgrade of scratch. Paracraft is 3D, and it automatically converts blocks to code. Paracraft also has a powerful movie editor that allows you create rich movies and games.</p>
+          <p>Paracraft is an upgrade of scratch. Paracraft is 3D, and it automatically converts blocks to code. Paracraft also has a powerful movie editor that allows you to create rich movies and games.</p>
         </div>
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Compare with MineCraft</h5>
@@ -23,7 +23,7 @@
           <p>
             ☉ complex movie editor<br>
             ☉ using bone blocks to define joints<br>
-            ☉ programing directly in the 3D world<br>
+            ☉ programming directly in the 3D world<br>
           </p>
         </div>
         <div class="part-box">
@@ -35,8 +35,8 @@
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Learn how to “program”, learn how to learn</h5>
           <iframe class="video-iframe" src="https://www.youtube.com/embed/6G6M6PzGZic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>“Program” means to build things up. Programmers are builders, they build works to express themselves, to change things around, or to even change the world. In paracraft, you learn the complete skill set in building 3D works, from 3D scene building, moving making, to coding and CAD. You learn of design, trouble shooting, collaborating, and so on.</p>
-          <p>“Program” also means to build up abstract models for complex systems, dissecting the whole abstract model into multiple composing parts on various layers so you can construct the whole by putting parts together. Thus “program” contains the systemic thinking methodologies. By learning how to program, you learn how to build up abstract models for various domains and how to tackle complex systems, the essential skills needed in today’s creative knowledge based economy.</p>
+          <p>“Program” means to build things up. Programmers are builders, they build works to express themselves, to change things around, or to even change the world. In paracraft, you learn the complete skill set in building 3D works, from 3D scene building, movie making, to coding and CAD. You learn of design, troubleshooting, collaborating, and so on.</p>
+          <p>“Program” also means to build up abstract models for complex systems, dissecting the whole abstract model into multiple composing parts on various layers so you can construct the whole by putting parts together. Thus “program” contains the systemic thinking methodologies. By learning how to program, you learn how to build up abstract models for various domains and how to tackle complex systems, the essential skills needed in today’s creative knowledge-based economy.</p>
         </div>
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Paracraft in Schools</h5>
