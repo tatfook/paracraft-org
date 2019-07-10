@@ -94,7 +94,7 @@ export default {
   &-content {
     &-title {
       text-align: center;
-      font-size: 20px;
+      font-size: 26px;
       font-weight: bold;
       img {
         margin-right: 6px;

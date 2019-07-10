@@ -28,6 +28,10 @@ export default {
   }
 }
 </script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700&display=swap');
+</style>
+
 <style lang="scss" scoped>
 .letter-page {
   background-color: #f5f5f5;
@@ -37,7 +41,8 @@ export default {
     max-width: 100%;
     margin: 0 auto;
     padding: 100px 80px;
-    font-family: 'Times New Roman';
+    font-family: 'Gaegu', cursive, 'Times New Roman';
+    font-size: 20px;
     position: relative;
     background-color: #fff;
     font-style: italic;
