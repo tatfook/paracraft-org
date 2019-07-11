@@ -34,8 +34,8 @@
       <div class="home-center-section-right">
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Learn how to “program”, learn how to learn</h5>
-          <!-- <iframe class="video-iframe" src="https://www.youtube.com/embed/6G6M6PzGZic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <video class="video-iframe" src="https://qiniu.keepwork.com/70-22a935c0-a2f6-11e9-b4c3-e998da2ef4fe.mp4?e=1562840840&token=LYZsjH0681n9sWZqCM4E2KmU6DsJOE7CAM4O3eJq:9Nh0zTzxKG1ZascgKsHynzoDapQ=" controls></video>
+          <iframe class="video-iframe" src="https://www.youtube.com/embed/HKj0QASc2xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <video class="video-iframe" src="https://qiniu.keepwork.com/70-22a935c0-a2f6-11e9-b4c3-e998da2ef4fe.mp4?e=1562840840&token=LYZsjH0681n9sWZqCM4E2KmU6DsJOE7CAM4O3eJq:9Nh0zTzxKG1ZascgKsHynzoDapQ=" controls></video> -->
           <p>“Program” means to build things up. Programmers are builders, they build works to express themselves, to change things around, or to even change the world. In paracraft, you learn the complete skill set in building 3D works, from 3D scene building, movie making, to coding and CAD. You learn of design, troubleshooting, collaborating, and so on.</p>
           <p>“Program” also means to build up abstract models for complex systems, dissecting the whole abstract model into multiple composing parts on various layers so you can construct the whole by putting parts together. Thus “program” contains the systemic thinking methodologies. By learning how to program, you learn how to build up abstract models for various domains and how to tackle complex systems, the essential skills needed in today’s creative knowledge-based economy.</p>
         </div>
@@ -46,7 +46,7 @@
               <img class="carousel-img" :src="img.imgUrl" alt="">
             </el-carousel-item>
           </el-carousel>
-          <p>Students love paracraft in schools. They engage in making 3D animations and games while their creativity and programming skills get cultivated. They also learn of literature, history, biology, math, physics and other subjects by watching 3D animations movies or by playing game-like projects in 3D worlds. Teachers love to create course related 3D works with paracraft. It is a very rich playground, just like <a class="part-box-link" href="https://www.edutopia.org/kindergarten-creativity-collaboration-lifelong-learning" target="_blank">the kindergarten Scratch founder Mitchel Resnick has wanted</a>: “ a place for telling stories, building castles, painting pictures, making friends, and learning to share”. As he said wonderfully, school should be more like kindergartens, not the other way around.</p>
+          <p>Students love paracraft in schools. They engage in making 3D animations and games while their creativity and programming skills get cultivated. They also learn of literature, history, biology, math, physics, and other subjects by watching 3D animations movies or by playing game-like projects in 3D worlds. Teachers love to create course related 3D works with paracraft. It is a very rich playground, just like <a class="part-box-link" href="https://www.edutopia.org/kindergarten-creativity-collaboration-lifelong-learning" target="_blank">the kindergarten Scratch founder Mitchel Resnick has wanted</a>: “ a place for telling stories, building castles, painting pictures, making friends, and learning to share”. As he said wonderfully, school should be more like kindergartens, not the other way around.</p>
         </div>
         <div class="part-box">
           <h5 class="part-box-title"><img class="part-box-title-icon" src="@/asset/images/box3.png" alt="">Support and Funding</h5>

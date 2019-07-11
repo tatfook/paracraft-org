@@ -85,6 +85,7 @@ export default {
     flex-wrap: wrap;
     &-left {
       width: 558px;
+      margin: 0 auto;
       font-size: 16px;
       color: #666;
       line-height: 30px;
