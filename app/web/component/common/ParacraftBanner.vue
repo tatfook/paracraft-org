@@ -30,7 +30,7 @@ export default {
     background: rgb(70, 145, 255);
   }
   height: 400px;
-  max-width: 1600px;
+  width: 1600px;
   margin: 0 auto;
   background: url('../../asset/images/banner.png') no-repeat center;
   position: relative;
@@ -72,9 +72,10 @@ export default {
     background-image: url('../../asset/images/banner2.png');
     background-color: #4b9aff;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 300px;
     background-position: 50% 222px;
     height: 443px;
+    width: 100%;
     .banner-box-icon {
       display: none;
     }
