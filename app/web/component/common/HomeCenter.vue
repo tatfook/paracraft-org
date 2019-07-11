@@ -139,7 +139,8 @@ export default {
         .el-carousel__container {
           .el-carousel__arrow {
             background: #fff;
-            .el-icon-arrow-left,.el-icon-arrow-right{
+            .el-icon-arrow-left,
+            .el-icon-arrow-right {
               font-size: 16px;
               color: #333;
               font-weight: 800;
@@ -178,12 +179,38 @@ export default {
     }
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1200px) {
   .home-center {
-    &-bgpic-1,&-bgpic-2,&-bgpic-3 {
+    &-bgpic-1,
+    &-bgpic-2,
+    &-bgpic-3 {
       display: none;
     }
     &-section {
+      .part-box {
+        .video-iframe {
+          width: 100%;
+          height: calc((50vw - 20px) / 542 * 304);
+        }
+        /deep/ .el-carousel {
+          .el-carousel__container {
+            height: calc((16vw - 20px) / 304 * 542 ) !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-center {
+    &-bgpic-1,
+    &-bgpic-2,
+    &-bgpic-3 {
+      display: none;
+    }
+    &-section {
+      display: block;
       .part-box {
         .video-iframe {
           width: 100%;
