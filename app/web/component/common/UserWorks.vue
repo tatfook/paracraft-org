@@ -28,9 +28,9 @@ export default {
     return {
       userWorksData: [
         {
-          poster: require('@/asset/images/works/1.png'),
-          videoUrl: 'https://www.youtube.com/watch?v=OInkv0lQYNQ',
-          name: 'I Am The Director'
+          poster: require('@/asset/images/works/1.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=B-Qr2hBEJL0',
+          name: 'BlockBot'
         },
         {
           poster: require('@/asset/images/works/2.png'),
@@ -78,9 +78,9 @@ export default {
           name: 'To Mars'
         },
         {
-          poster: require('@/asset/images/works/11.png'),
-          videoUrl: 'https://www.youtube.com/watch?v=GVa_nGgMbc4',
-          name: 'Mars Exploration'
+          poster: require('@/asset/images/works/11.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=PezNJdxptdo',
+          name: 'Mind Master'
         },
         {
           poster: require('@/asset/images/works/12.png'),
@@ -108,25 +108,46 @@ export default {
           name: 'The Clown'
         },
         {
-          poster: require('@/asset/images/works/17.png'),
-          videoUrl: 'https://www.youtube.com/watch?v=qlHiSdFe2T8',
-          name: 'Eternal Snowman'
+          poster: require('@/asset/images/works/17.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=-xZmty75LdY',
+          name: 'Human Resources'
         },
         {
-          poster: require('@/asset/images/works/18.png'),
-          videoUrl: 'https://www.youtube.com/watch?v=pauv07XvFHk',
-          name: 'Shine Your Way'
+          poster: require('@/asset/images/works/18.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=gHiPSYqye9E',
+          name: 'Tank Force'
         },
         {
-          poster: require('@/asset/images/works/19.png'),
-          videoUrl: 'https://www.youtube.com/watch?v=56H0z396LPM',
-          name: 'Beautiful Mind'
+          poster: require('@/asset/images/works/19.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=jlbV98guLv4',
+          name: 'Connect the Roads'
         },
         {
-          poster: require('@/asset/images/works/20.png'),
-          videoUrl: 'https://www.youtube.com/watch?v=QwY4xgJcqKs',
-          name: 'Unfinished'
-        }
+          poster: require('@/asset/images/works/20.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=AGIxs4absUs',
+          name: 'King of the Jungle'
+        },
+        {
+          poster: require('@/asset/images/works/21.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=oPShp1GYpoc',
+          name: 'Cooking Day'
+        },
+        {
+          poster: require('@/asset/images/works/22.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=luLJckt0Jcw',
+          name: 'Game of Life'
+        },
+        {
+          poster: require('@/asset/images/works/23.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=aWGFTB2vMRE',
+          name: 'Blorxz'
+        },
+        {
+          poster: require('@/asset/images/works/24.jpg'),
+          videoUrl: 'https://www.youtube.com/watch?v=fDzIxgLE7c4',
+          name: 'Fire Boy and Water Girl'
+        },
+
       ]
     }
   },
