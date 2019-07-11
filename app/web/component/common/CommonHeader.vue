@@ -1,31 +1,33 @@
 <template>
-  <div class="common-header">
-    <a href="/" class="common-header-logo">
-      <img src="@/asset/images/logo.png" alt="" />
-      Paracraft
-    </a>
-    <div class="common-header-menus">
-      <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
-      <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
-      <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
-    </div>
-    <div class="common-header-dropdown">
-      <el-dropdown trigger="click">
-        <span class="el-dropdown-link">
-          <img class="common-header-dropdown-target" src="@/asset/images/menu.svg" alt="">
-        </span>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>
-            <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
-          </el-dropdown-item>
-          <el-dropdown-item>
-            <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
-          </el-dropdown-item>
-          <el-dropdown-item>
-            <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
-          </el-dropdown-item>
-        </el-dropdown-menu>
-      </el-dropdown>
+  <div class="common-header-wrap">
+    <div class="common-header">
+      <a href="/" class="common-header-logo">
+        <img src="@/asset/images/logo.png" alt="" />
+        Paracraft
+      </a>
+      <div class="common-header-menus">
+        <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
+        <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
+        <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
+      </div>
+      <div class="common-header-dropdown">
+        <el-dropdown trigger="click">
+          <span class="el-dropdown-link">
+            <img class="common-header-dropdown-target" src="@/asset/images/menu.svg" alt="">
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item>
+              <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
+            </el-dropdown-item>
+            <el-dropdown-item>
+              <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
+            </el-dropdown-item>
+            <el-dropdown-item>
+              <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
+            </el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
     </div>
   </div>
 </template>
@@ -41,12 +43,15 @@ export default {
 </script>
 <style lang="scss" scoped>
 .common-header {
+  &-wrap {
+    background-color: #f1f1f1;
+  }
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   height: 56px;
   align-items: center;
-  background-color: #fff;
+  background-color: #f1f1f1;
   &-logo {
     font-size: 24px;
     font-weight: bold;
