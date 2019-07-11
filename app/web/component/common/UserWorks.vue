@@ -181,6 +181,7 @@ export default {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     &-box {
       width: 285px;
       padding: 16px 16px 5px;
@@ -223,6 +224,11 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .user-works {
+    &-bgpic-1,
+    &-bgpic-2,
+    &-bgpic-3 {
+      display: none;
+    }
     &-title {
       &-text {
         font-size: 20px;
