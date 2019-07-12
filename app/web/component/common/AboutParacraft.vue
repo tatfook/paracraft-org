@@ -170,9 +170,11 @@ export default {
         width: 100%;
         margin-bottom: 30px;
         &-video {
+          max-width: 100%;
+          padding: 16px 22px;
           .video-iframe {
             width: 100%;
-            height: calc((100vw - 20px) / 560 * 315);
+            height: calc((100vw - 52px) / 560 * 315);
           }
         }
         &-buttons {
