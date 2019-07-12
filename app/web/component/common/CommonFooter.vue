@@ -25,7 +25,7 @@
           <el-dropdown-item v-for="(linkItem, index) in footerItem.links" :key='`linkItem${index}`'>
             <template v-if="linkItem.type === 'icons'">
               <a class="common-footer-icon-link" v-for="(iconItem, index) in linkItem.links" :key='`iconItem${index}`' :href="iconItem.link" target="_blank">
-                <img class="icon-hover" :src="index == 2 ? iconItem.iconUrl : iconItem.hoverIconUrl" alt="" />
+                <img class="icon-hover" :src="index == 3 ? iconItem.iconUrl : iconItem.hoverIconUrl" alt="" />
               </a>
             </template>
             <template v-else>
@@ -139,6 +139,11 @@ export default {
                     'https://www.youtube.com/channel/UC7pzmXOhkrPxFuOWfhoeSDA'
                 },
                 {
+                  iconUrl: require('@/asset/images/twitter.png'),
+                  hoverIconUrl: require('@/asset/images/twitter_color.png'),
+                  link: 'https://twitter.com/lixizhi'
+                },
+                {
                   iconUrl: require('@/asset/images/mail.png'),
                   hoverIconUrl: require('@/asset/images/mail_hover.png'),
                   link: 'mailto:lixizhi@paraengine.com'
@@ -189,6 +194,7 @@ export default {
   }
   .icon-hover {
     display: none;
+    margin-bottom: 16px;
     cursor: pointer;
   }
   &-link {
@@ -198,11 +204,15 @@ export default {
   &-icon-link {
     margin-right: 20px;
     font-size: 0;
+    .icon {
+      margin-bottom: 16px;
+    }
     &:hover {
       text-decoration: none;
       color: #fff;
       .icon {
         display: none;
+        margin-bottom: 16px;
       }
       .icon-hover {
         display: inline-block;

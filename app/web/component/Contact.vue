@@ -17,6 +17,10 @@
           <img class="link-item-icon" src="../asset/images/youtube_color.png" alt="youtube">
           Xizhi Li
         </a>
+        <a class="link-item clear-link" href="https://twitter.com/lixizhi" target="_blank">
+          <img class="link-item-icon" src="../asset/images/twitter_color.png" alt="youtube">
+          Xizhi Li
+        </a>
         <a href="mailto:lixizhi@paraengine.com" class="link-item clear-link">
           <img class="link-item-icon" src="../asset/images/mail_color.png" alt="email">
           lixizhi@paraengine.com
