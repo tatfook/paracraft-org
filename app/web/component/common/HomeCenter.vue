@@ -134,6 +134,7 @@ export default {
       .video-iframe {
         width: 530px;
         height: 305px;
+        border-radius: 6px;
       }
       /deep/ .el-carousel {
         .el-carousel__container {
