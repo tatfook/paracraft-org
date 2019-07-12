@@ -1,6 +1,8 @@
 <template>
   <div class="paracraft">
-    <common-header></common-header>
+    <div class="paracraft-header-wrap">
+      <common-header class="paracraft-header"></common-header>
+    </div>
     <div class="paracraft-main">
       <router-view id="paracraft-page" />
     </div>
@@ -49,6 +51,19 @@ export default {
     url('../../asset/fonts/opensans-regular-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+.paracraft {
+  &-header-wrap {
+    min-height: 56px;
+  }
+  &-header {
+    height: 56px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 10px 0 10px #ccc;
+  }
 }
 </style>
 
