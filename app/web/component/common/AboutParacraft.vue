@@ -16,7 +16,7 @@
       </div>
       <div class="about-paracraft-main-right">
         <div class="about-paracraft-main-right-video">
-          <!-- <video class="about-paracraft-main-right-video-content" controls :src="currenPlayVideoUrl" :poster="currentPoster"></video> -->
+          <!-- <video class="video-iframe" controls :src="currenPlayVideoUrl" :poster="currentPoster"></video> -->
           <iframe v-if="selectedVideo == 0" class="video-iframe" src="https://www.youtube.com/embed/6bn4EPZyMXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe v-else class="video-iframe" src="https://www.youtube.com/embed/uUP4ZOp9Vgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -47,7 +47,7 @@ export default {
   computed: {
     currenPlayVideoUrl() {
       return this.selectedVideo == 0
-        ? 'https://www.youtube.com/watch?v=KfpqXMLNtLY'
+        ? 'https://api.keepwork.com/storage/v0/siteFiles/770/raw#宣传视频01.mp4'
         : 'https://www.youtube.com/watch?v=uUP4ZOp9Vgo'
     },
     currentPoster() {
@@ -115,6 +115,7 @@ export default {
         display: flex;
         justify-content: center;
         &-button {
+          min-width: 156px;
           margin: 30px;
           padding: 12px 50px;
           cursor: pointer;
@@ -171,7 +172,7 @@ export default {
         &-video {
           .video-iframe {
             width: 100%;
-            height: 215px;
+            height: calc((100vw - 20px) / 560 * 315);
           }
         }
         &-buttons {
