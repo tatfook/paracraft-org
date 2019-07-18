@@ -22,7 +22,7 @@
   </div>
 </template>
 <script>
-export default {
+export default { 
   name: 'UserWorks',
   data() {
     return {
@@ -128,9 +128,9 @@ export default {
           name: 'King of the Jungle'
         },
         {
-          poster: require('@/asset/images/works/21.jpg'),
-          videoUrl: 'https://www.youtube.com/watch?v=oPShp1GYpoc',
-          name: 'Cooking Day'
+          poster: require('@/asset/images/works/21.png'),
+          videoUrl: 'https://www.youtube.com/watch?v=EcO1M4KA5oY',
+          name: 'We Are All Wonders'
         },
         {
           poster: require('@/asset/images/works/22.jpg'),
