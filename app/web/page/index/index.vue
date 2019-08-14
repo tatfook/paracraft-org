@@ -24,6 +24,24 @@ Vue.use(ElementUI)
 
 export default {
   name: 'App',
+  mounted() {
+    const language =
+      navigator.appName === 'Netscape'
+        ? navigator.language
+        : navigator.browserLanguage
+    if (language.indexOf('zh') === -1) {
+      this.$confirm('Do you switch to English ?', '', {
+        confirmButtonText: 'OK',
+        cancelButtonText: 'Cancel'
+      })
+        .then(res => {
+          window.location.href = 'http://pa.keepwork.com/'
+        })
+        .catch(e => {
+          console.error(e)
+        })
+    }
+  },
   components: {
     CommonHeader,
     CommonFooter
