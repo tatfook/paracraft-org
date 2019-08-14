@@ -5,9 +5,10 @@
         <img src="@/asset/images/logo.png" alt="" />
         Paracraft
       </a>
+      <i @click="onChangeLanguage" class="icon-chinese1 iconfont zh-change-icon"></i>
       <div class="common-header-menus">
         <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
-        <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
+        <a href="http://paracraft.keepwork.com/download?lang=en" target="_blank">Download</a>
         <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
       </div>
       <div class="common-header-dropdown">
@@ -20,7 +21,7 @@
               <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
             </el-dropdown-item>
             <el-dropdown-item>
-              <a href="http://paracraft.keepwork.com/download" target="_blank">Download</a>
+              <a href="http://paracraft.keepwork.com/download?lang=en" target="_blank">Download</a>
             </el-dropdown-item>
             <el-dropdown-item>
               <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
@@ -38,6 +39,11 @@ export default {
     routerName() {
       return this.$route.name
     }
+  },
+  methods: {
+    onChangeLanguage() {
+      window.location.href = 'http://pa.keepwork.com/'
+    }
   }
 }
 </script>
@@ -45,6 +51,15 @@ export default {
 .common-header {
   &-wrap {
     background-color: #f1f1f1;
+  }
+  .zh-change-icon {
+    font-size: 34px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #4aa8ff;
+    }
   }
   display: flex;
   max-width: 1200px;
