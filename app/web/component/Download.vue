@@ -4,9 +4,6 @@
       <div class="download-welcome-center">
         <p class="download-welcome-center-title">Welcome to Download ParaCraft</p>
         <div class="download-welcome-center-version"><span class="download-welcome-center-version-new">Version：0.7.457</span> <a href="https://www.evernote.com/shard/s177/client/snv?noteGuid=f876e8cb-4563-4b26-ba23-55524609b79d&noteKey=89b1fed1ca2e1eb1&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs177%2Fsh%2Ff876e8cb-4563-4b26-ba23-55524609b79d%2F89b1fed1ca2e1eb1&title=%2523%2523%2BParaCraft%2BChange%2BLog%2B2019" class="download-welcome-center-version-update">Changelog</a></div>
-        <!-- <p class="download-welcome-center-count">
-          <span class="download-welcome-center-count-diamonds" v-for="(i,index) in optimizeDownloadCount" :key="index">{{i}}</span>人下载使用
-        </p> -->
       </div>
     </div>
     <div class="download-center">
@@ -106,6 +103,7 @@ export default {
     }
   },
   mounted() {
+    console.log(process.env)
     window.scrollTo(0, 0)
     document.title = 'Download'
     let baseUrl = process.env.KEEPWORK_API_PREFIX
