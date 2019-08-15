@@ -56,6 +56,9 @@ export default {
   &-header-wrap {
     min-height: 56px;
   }
+  &-main {
+    min-height: 700px;
+  }
   &-header {
     height: 56px;
     position: fixed;
