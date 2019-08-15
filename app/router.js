@@ -5,4 +5,5 @@ module.exports = app => {
   router.get('/contact', controller.index.index.index)
   router.get('/whoWeAre', controller.index.index.index)
   router.get('/letter', controller.index.index.index);
+  router.get('/download', controller.index.index.index)
 };

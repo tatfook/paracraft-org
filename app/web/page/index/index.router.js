@@ -4,6 +4,7 @@ const HomePage = () => import('@/component/common/HomePage')
 const Contact = () => import('@/component/Contact')
 const LetterPage = () => import('@/component/common/LetterPage')
 const WhoWeAre = () => import('@/component/WhoWeAre')
+const Download = () => import('@/component/Download')
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
       path: '/whoWeAre',
       name: 'WhoWeAre',
       component: WhoWeAre
+    }, {
+      path: '/download',
+      name: 'Download',
+      component: Download
     }
   ]
 })

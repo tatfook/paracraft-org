@@ -7,9 +7,9 @@
       </a>
       <i @click="onChangeLanguage" class="icon-chinese1 iconfont zh-change-icon"></i>
       <div class="common-header-menus">
-        <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
-        <a href="http://paracraft.keepwork.com/download?lang=en" target="_blank">Download</a>
-        <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
+        <router-link :class="{'active': routerName === 'HomePage'}" :to="{ name: 'HomePage'}">About</router-link>
+        <router-link :class="{'active': routerName === 'Download'}" :to="{ name: 'Download'}">Download</router-link>
+        <router-link :class="{'active': routerName === 'Contact'}" :to="{ name: 'Contact'}">Contact</router-link>
       </div>
       <div class="common-header-dropdown">
         <el-dropdown trigger="click">
@@ -18,13 +18,13 @@
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>
-              <a :class="{'active': routerName === 'HomePage'}" href="/">About</a>
+              <router-link :class="{'active': routerName === 'HomePage'}" :to="{ name: 'HomePage'}">About</router-link>
             </el-dropdown-item>
             <el-dropdown-item>
-              <a href="http://paracraft.keepwork.com/download?lang=en" target="_blank">Download</a>
+              <router-link :class="{'active': routerName === 'Download'}" :to="{ name: 'Download'}">Download</router-link>
             </el-dropdown-item>
             <el-dropdown-item>
-              <a :class="{'active': routerName === 'Contact'}" href="/contact">Contact</a>
+              <router-link :class="{'active': routerName === 'Contact'}" :to="{ name: 'Contact'}">Contact</router-link>
             </el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
