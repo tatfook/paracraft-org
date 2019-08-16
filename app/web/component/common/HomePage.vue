@@ -19,6 +19,9 @@ export default {
     AboutParacraft,
     HomeCenter,
     UserWorks
+  },
+  mounted() {
+    document.title = 'Paracraft, the software for youth programming'
   }
 }
 </script>
