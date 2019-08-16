@@ -3,7 +3,7 @@
     <div class="download-welcome">
       <div class="download-welcome-center">
         <p class="download-welcome-center-title">Welcome to Download ParaCraft</p>
-        <div class="download-welcome-center-version"><span class="download-welcome-center-version-new">Version：0.7.457</span> <a href="https://www.evernote.com/shard/s177/client/snv?noteGuid=f876e8cb-4563-4b26-ba23-55524609b79d&noteKey=89b1fed1ca2e1eb1&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs177%2Fsh%2Ff876e8cb-4563-4b26-ba23-55524609b79d%2F89b1fed1ca2e1eb1&title=%2523%2523%2BParaCraft%2BChange%2BLog%2B2019" class="download-welcome-center-version-update">Changelog</a></div>
+        <div class="download-welcome-center-version"><span class="download-welcome-center-version-new">Version：{{ downloadURL.version }}</span> <a href="https://www.evernote.com/shard/s177/client/snv?noteGuid=f876e8cb-4563-4b26-ba23-55524609b79d&noteKey=89b1fed1ca2e1eb1&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs177%2Fsh%2Ff876e8cb-4563-4b26-ba23-55524609b79d%2F89b1fed1ca2e1eb1&title=%2523%2523%2BParaCraft%2BChange%2BLog%2B2019" class="download-welcome-center-version-update">Changelog</a></div>
       </div>
     </div>
     <div class="download-center">
@@ -12,14 +12,14 @@
           <div class="download-center-cabinet-box">
             <img src="@/asset/images/下载页/下载安装/Windows-8.png" alt="">
             <div class="download-center-cabinet-box-recommend">Windows</div>
-            <a href="http://cdn.keepwork.com/paracraft/win32/paracraft_full.exe?ver=07457" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight "><img class="download-center-cabinet-box-desc-img" src="@/asset/images/下载页/下载安装/Windows-8拷贝.png" alt="">Download</a>
+            <a :href="downloadURL.window_install" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight "><img class="download-center-cabinet-box-desc-img" src="@/asset/images/下载页/下载安装/Windows-8拷贝.png" alt="">Download</a>
           </div>
         </div>
         <div class="download-center-cabinet-box-wrap">
           <div class="download-center-cabinet-box">
             <img src="@/asset/images/下载页/下载安装/mac.png" alt="">
             <div class="download-center-cabinet-box-recommend">Mac</div>
-            <a href="https://itunes.apple.com/cn/app/paracraft/id1422406070" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
+            <a :href="downloadURL.mac" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
           </div>
         </div>
       </div>
@@ -28,10 +28,10 @@
           <div class="download-center-cabinet-box">
             <div class="download-center-cabinet-box-cover">
               <img src="@/asset/images/下载页/下载安装/phone_android.png" alt="">
-              <img class="download-center-cabinet-box-QR" src="@/asset/images/下载页/下载安装/qrct-049b1319e0b9933ca83e6cd2e27524b4.png" alt="">
+              <qrcode :value="downloadURL.android_apk" :options="QROptions" class="download-center-cabinet-box-QR"></qrcode>
             </div>
             <p class="download-center-cabinet-box-recommend">Android</p>
-            <a href="http://cdn.keepwork.com/paracraft/android/paracraft.apk?ver=07411" class="download-center-cabinet-box-hint-phone" @click="addDownloadCount">Download Android APK</a>
+            <a :href="downloadURL.android_apk" class="download-center-cabinet-box-hint-phone" @click="addDownloadCount">Download Android APK</a>
           </div>
         </div>
         <div class="download-center-cabinet-box-wrap">
@@ -87,42 +87,43 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
+import { get, post } from '@/api'
 
 export default {
   name: 'Download',
   data() {
     return {
-      downloadCount: ''
+      downloadCount: '',
+      downloadURL: {}
     }
   },
   computed: {
     optimizeDownloadCount() {
       this.downloadCount = 103200 + this.downloadCount
       return this.downloadCount.toString().split('')
+    },
+    QROptions() {
+      return {
+        width: 91,
+        height: 91
+      }
     }
   },
   mounted() {
-    console.log(process.env)
     window.scrollTo(0, 0)
-    document.title = 'Download'
-    let baseUrl = process.env.KEEPWORK_API_PREFIX
-    axios
-      .get(`${baseUrl}/keepworks/paracraft_download_count`)
-      .then(response => {
-        this.downloadCount = response.data
-      })
-      .catch(error => console.error(error))
+    document.title = 'Download | Paracraft'
+    this.getdownloadURL()
+  },
+  destroyed() {
+    document.title = 'Paracraft'
   },
   methods: {
     addDownloadCount() {
-      let baseUrl = process.env.KEEPWORK_API_PREFIX
-      axios
-        .post(`${baseUrl}/keepworks/paracraft_download_count`, {})
-        .then(response => {
-          this.downloadCount = response.data
-        })
-        .catch(error => console.error(error))
+      post('keepworks/paracraft_download_count', {})
+    },
+    async getdownloadURL() {
+      const url = await get('keepworks/paracraft_download_url')
+      this.downloadURL = url
     }
   }
 }
