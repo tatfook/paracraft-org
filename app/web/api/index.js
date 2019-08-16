@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://api.dev.kp/core/v0'
+const baseUrl = process.env.KEEPWORK_API_PREFIX
 axios.interceptors.response.use(res => res.data)
 
 const get = (url) => axios.get(`${baseUrl}/${url}`)
