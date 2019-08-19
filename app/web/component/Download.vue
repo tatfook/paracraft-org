@@ -80,7 +80,9 @@
         <div class="download-center-paracraft download-center-paracraft-code ">
           <div class="download-center-paracraft-title marginTop0px">Change log:</div>
           <div class="download-center-paracraft-hint"><a class="download-center-paracraft-hint-guide" href="https://www.evernote.com/shard/s177/client/snv?noteGuid=f876e8cb-4563-4b26-ba23-55524609b79d&noteKey=89b1fed1ca2e1eb1&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs177%2Fsh%2Ff876e8cb-4563-4b26-ba23-55524609b79d%2F89b1fed1ca2e1eb1&title=%2523%2523%2BParaCraft%2BChange%2BLog%2B2019" target="_blank">see developer log
-              <br> feature list</a></div>
+            </a></div>
+          <div class="download-center-paracraft-hint"><a class="download-center-paracraft-hint-guide" href="https://github.com/LiXizhi/ParaCraftSDK/wiki/ParacraftFeatures" target="_blank">feature list
+            </a></div>
         </div>
       </div>
     </div>
