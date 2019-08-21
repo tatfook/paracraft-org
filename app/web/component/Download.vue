@@ -37,7 +37,7 @@
         <div class="download-center-cabinet-box-wrap">
           <div class="download-center-cabinet-box">
             <img src="@/asset/images/下载页/下载安装/phone_android拷贝.png" alt="">
-            <div class="download-center-cabinet-box-recommend">IOS(in submission)</div>
+            <div class="download-center-cabinet-box-recommend disabled">IOS<span class="tips">(in submission)</span></div>
             <div class="download-center-cabinet-box-hint-disabled">Download from Apple App Store</div>
           </div>
         </div>
@@ -70,7 +70,7 @@
             <h4 class="download-abstract-intro-box-content-title">Paracraft</h4>
             <div class="download-abstract-intro-box-content-text">Free movie making too</div>
             <div class="download-abstract-intro-box-content-text"><a class="blue-link" href="https://github.com/LiXizhi/ParaCraftSDK">Open sourced</a></div>
-            <div class="download-abstract-intro-box-content-text">Paracraft SDK, source code, plugins, see <a class="blue-link" href="https://github.com/LiXizhi/ParaCraftSDK">here</a></div>
+            <div class="download-abstract-intro-box-content-text">Paracraft SDK, source code, plugins, see <a class="blue-link" href="https://keepwork.com/official/Resource_en/intro">here</a></div>
           </div>
         </div>
       </div>
@@ -187,12 +187,13 @@ export default {
         color: #ff8150;
         &:hover {
           color: #e17247;
+          text-decoration: underline;
         }
       }
     }
     &-cabinet {
       display: flex;
-      padding: 40px 0;
+      padding: 65px 0;
       &-phone {
         background: #e9f4fe;
       }
@@ -217,6 +218,13 @@ export default {
         }
         &-recommend {
           margin: 10px auto;
+          font-size: 20px;
+          &.disabled {
+            color: #858585;
+            .tips {
+              font-size: 16px;
+            }
+          }
         }
         &-desc {
           display: flex;
@@ -251,6 +259,7 @@ export default {
           color: #8d8d8d;
           &-disabled {
             font-size: 14px;
+            color: #858585;
           }
           &-phone {
             max-width: 176px;
@@ -262,7 +271,8 @@ export default {
             text-decoration: none;
             text-align: center;
             &:hover {
-              color: #328654;
+              color: #32b16c;
+              text-decoration: underline;
             }
           }
         }
@@ -285,7 +295,8 @@ export default {
           color: #399fff;
           text-decoration: none;
           &:hover {
-            color: #2c82d2;
+            color: #399fff;
+            text-decoration: underline;
           }
         }
       }
