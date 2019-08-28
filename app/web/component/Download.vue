@@ -55,10 +55,10 @@
           <div class="download-abstract-intro-box-content">
             <img class="download-abstract-intro-box-content" src="@/asset/images/下载页/all_devices_banner.png" alt="">
             <div class="download-abstract-intro-box-content-text">Paracraft is a free movie making tool for everyone. <br>
-              The vision: <span class="text-bold">“Everyone should make a movie in its life!”</span></div>
+              The vision: <span class="text-bold">“Everyone should make a movie in his life!”</span></div>
             <ul class="download-abstract-intro-box-content-text-list">
               <li>Create 3D scenes, models, actors in an immersive blocky world.</li>
-              <li>Make animations, movies, interactive stories at real time.</li>
+              <li>Make animations, movies, interactive stories in real time.</li>
               <li>Learn programming.</li>
             </ul>
             <div class="download-abstract-intro-box-content-text">Download now to view hundreds of movies created by our users.</div>
@@ -68,7 +68,7 @@
           <div class="download-abstract-intro-box-content">
             <img class="download-abstract-intro-box-content-img" src="@/asset/images/下载页/paracraft_app_logo.png" alt="">
             <h4 class="download-abstract-intro-box-content-title">Paracraft</h4>
-            <div class="download-abstract-intro-box-content-text">Free movie making too</div>
+            <div class="download-abstract-intro-box-content-text">Free 3D Creativity Tool</div>
             <div class="download-abstract-intro-box-content-text"><a class="blue-link" href="https://github.com/LiXizhi/ParaCraftSDK">Open sourced</a></div>
             <div class="download-abstract-intro-box-content-text">Paracraft SDK, source code, plugins, see <a class="blue-link" href="https://keepwork.com/official/Resource_en/intro">here</a></div>
           </div>
