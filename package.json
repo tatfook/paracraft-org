@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "egg-bin dev",
     "stop": "egg-scripts stop --title=paracraft-org",
-    "start": "egg-scripts start --port=80 --title=paracraft-org --daemon",
+    "start": "egg-scripts start --port=80 --title=paracraft-org",
     "debug": "egg-bin debug",
     "clean": "easy clean all",
     "build": "easywebpack build prod",
