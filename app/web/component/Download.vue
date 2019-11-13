@@ -37,8 +37,8 @@
         <div class="download-center-cabinet-box-wrap">
           <div class="download-center-cabinet-box">
             <img src="@/asset/images/下载页/下载安装/phone_android拷贝.png" alt="">
-            <div class="download-center-cabinet-box-recommend disabled">IOS<span class="tips">(in submission)</span></div>
-            <div class="download-center-cabinet-box-hint-disabled">Download from Apple App Store</div>
+            <div class="download-center-cabinet-box-recommend">IOS</div>
+            <a href="https://apps.apple.com/cn/app/paracraft/id1422411677" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
           </div>
         </div>
       </div>
@@ -219,12 +219,6 @@ export default {
         &-recommend {
           margin: 10px auto;
           font-size: 20px;
-          &.disabled {
-            color: #858585;
-            .tips {
-              font-size: 16px;
-            }
-          }
         }
         &-desc {
           display: flex;
