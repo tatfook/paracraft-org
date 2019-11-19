@@ -19,7 +19,7 @@
           <div class="download-center-cabinet-box">
             <img src="@/asset/images/下载页/下载安装/mac.png" alt="">
             <div class="download-center-cabinet-box-recommend">Mac</div>
-            <a :href="downloadURL.mac" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
+            <a href="https://apps.apple.com/us/app/paracraft/id1422406070" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
           </div>
         </div>
       </div>
@@ -37,8 +37,8 @@
         <div class="download-center-cabinet-box-wrap">
           <div class="download-center-cabinet-box">
             <img src="@/asset/images/下载页/下载安装/phone_android拷贝.png" alt="">
-            <div class="download-center-cabinet-box-recommend">IOS</div>
-            <a href="https://apps.apple.com/cn/app/paracraft/id1422411677" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
+            <div class="download-center-cabinet-box-recommend">iOS</div>
+            <a href="https://apps.apple.com/us/app/paracraft/id1422411677" target="_blank" @click="addDownloadCount" class="download-center-cabinet-box-desc download-center-cabinet-box-desc-highlight">Apple Store</a>
           </div>
         </div>
       </div>
