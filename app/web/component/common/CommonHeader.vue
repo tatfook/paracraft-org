@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     onChangeLanguage() {
-      window.location.href = 'http://pa.keepwork.com/'
+      window.location.href = 'http://www.paracraft.cn/'
     }
   }
 }
