@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-qrcode": "^1.0.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cross-env": "^5.0.0",
     "dotenv-webpack": "^1.7.0",
     "egg": "^2.1.0",
